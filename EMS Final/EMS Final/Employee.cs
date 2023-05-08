@@ -80,7 +80,7 @@ namespace EMS_Final
         {
 
         }
-private void populate()
+        private void populate()
         {
             //DataGridView
             Con.Open();

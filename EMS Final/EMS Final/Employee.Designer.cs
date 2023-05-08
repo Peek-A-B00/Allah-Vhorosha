@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.EmpDGV = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
@@ -87,6 +90,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.EmpDGV);
             this.panel1.Controls.Add(this.button4);
@@ -126,9 +130,21 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(1, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1190, 510);
+            this.panel1.Size = new System.Drawing.Size(1164, 546);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.DarkMagenta;
+            this.label24.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(463, 274);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(151, 29);
+            this.label24.TabIndex = 44;
+            this.label24.Text = "Employee List";
             // 
             // button5
             // 
@@ -145,9 +161,29 @@
             // 
             // EmpDGV
             // 
+            this.EmpDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.EmpDGV.BackgroundColor = System.Drawing.Color.White;
             this.EmpDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EmpDGV.Location = new System.Drawing.Point(44, 272);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkMagenta;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmpDGV.DefaultCellStyle = dataGridViewCellStyle1;
+            this.EmpDGV.GridColor = System.Drawing.Color.DarkMagenta;
+            this.EmpDGV.Location = new System.Drawing.Point(44, 306);
             this.EmpDGV.Name = "EmpDGV";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkMagenta;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmpDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.EmpDGV.RowHeadersWidth = 10;
             this.EmpDGV.Size = new System.Drawing.Size(1043, 237);
             this.EmpDGV.TabIndex = 42;
             this.EmpDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -536,7 +572,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(390, 633);
+            this.label22.Location = new System.Drawing.Point(395, 654);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(287, 26);
             this.label22.TabIndex = 6;
@@ -547,7 +583,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(1116, -1);
+            this.label23.Location = new System.Drawing.Point(1125, 9);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(26, 29);
             this.label23.TabIndex = 7;
@@ -559,7 +595,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(1143, 683);
+            this.ClientSize = new System.Drawing.Size(1163, 715);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.panel1);
@@ -620,5 +656,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label24;
     }
 }

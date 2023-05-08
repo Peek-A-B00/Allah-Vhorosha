@@ -77,5 +77,33 @@ namespace EMS_Final
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Attendance att = new Attendance(); ;
+            att.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Attendance att = new Attendance(); ;
+            att.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Leave lev = new Leave();
+            lev.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Leave lev = new Leave();
+            lev.Show();
+            this.Hide();
+        }
     }
 }
